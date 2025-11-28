@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project2 - Contacts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Contacts (Project 2)</h1>
+
+    <section id="create">
+      <h2>Add contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone">
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="list">
+      <h2>All contacts</h2>
+      <ul id="contacts"></ul>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

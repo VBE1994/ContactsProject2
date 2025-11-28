@@ -1,0 +1,248 @@
+/* Google Fonts - Import a modern, clean font (OPTIONAL: Remove if you don't want external font) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff; /* Blue for main actions/branding */
+    --secondary-color: #6c757d; /* Gray for default actions */
+    --success-color: #28a745; /* Green */
+    --danger-color: #dc3545; /* Red */
+    --background-light: #f8f9fa; /* Lighter background */
+    --text-color-dark: #343a40; /* Darker text */
+    --text-color-light: #6c757d; /* Lighter text */
+    --card-background: #ffffff;
+    --border-color: #dee2e6;
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-light);
+    color: var(--text-color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: var(--text-color-dark);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+#contactForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) auto;
+    gap: 15px;
+    align-items: center;
+    background: var(--background-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 5px var(--shadow-light);
+}
+
+#contactForm input {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+    color: var(--text-color-dark);
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contactForm input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--shadow-light);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Specific styling for action buttons */
+.actions button {
+    background-color: var(--secondary-color);
+    margin-left: 10px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.actions button:hover {
+    background-color: #5a6268;
+}
+
+/* Edit button specific style */
+.actions button:first-of-type {
+    background-color: var(--primary-color);
+}
+
+.actions button:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button specific style */
+.actions button:last-of-type {
+    background-color: var(--danger-color);
+}
+
+.actions button:last-of-type:hover {
+    background-color: #c82333;
+}
+
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: var(--card-background);
+    padding: 15px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-medium);
+}
+
+.item-meta {
+    flex: 1;
+    font-size: 1.1em;
+    color: var(--text-color-dark);
+    line-height: 1.5;
+    word-break: break-word; /* Ensure long emails/phones don't overflow */
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0; /* Prevents action buttons from shrinking */
+}
+
+/* Empty list message */
+#contacts li:last-child:only-child {
+    justify-content: center;
+    font-style: italic;
+    color: var(--text-color-light);
+    box-shadow: none;
+    background: none;
+    border: none;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    main {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    #contactForm {
+        grid-template-columns: 1fr; /* Stack inputs on small screens */
+        padding: 15px;
+        gap: 10px;
+    }
+
+    #contactForm input, #contactForm button {
+        width: 100%;
+    }
+    
+    li {
+        flex-direction: column; /* Stack meta and actions vertically on small screens */
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .item-meta {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .actions {
+        width: 100%;
+        justify-content: space-around; /* Center buttons horizontally */
+    }
+    
+    .actions button {
+        margin: 0;
+        flex-grow: 1; /* Make action buttons take up available width */
+    }
+} 
