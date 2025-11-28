@@ -1,7 +1,7 @@
 # Project 2 — Full Stack REST API (Starter)
 
-Live demo: **(deploy to Render — paste public URL here)**  
-Repo: **(paste GitHub repo URL)**
+Live demo: deploy to Render — https://contactsproject2.onrender.com 
+Repo: https://github.com/VBE1994/ContactsProject2
 
 ## Summary
 Small full stack REST API project with a simple contacts CRUD API and a minimal frontend. Backend is Node/Express and serves the static files in `/public`.
@@ -14,7 +14,7 @@ Small full stack REST API project with a simple contacts CRUD API and a minimal 
 ## Run locally (Windows & macOS)
 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/VBE1994/ContactsProject2
 cd YOUR_REPO
 ```
 2. Install
