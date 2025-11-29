@@ -36,14 +36,3 @@ Select your repository
 Build command: npm install
 Start command: npm start
 Deploy and copy the public URL
-
-## Screenshots
-
-### Homepage (Render deployment)
-![Homepage](screenshots/renderprojecthomepage.png)
-
-### Data.json view in VS Code
-![Data JSON](screenshots/datajsonvsc.png)
-
-### Testing the app in Incognito
-![Contacts App in incognito mode showcasing a clean UI.](screenshots/openincognito.png)
