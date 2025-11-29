@@ -52,4 +52,4 @@ Working on this project was an excellent exercise in building a robust, full-sta
 
 Screenshots: 
 
-![image alt] https://github.com/VBE1994/ContactsProject2/blob/97f829e0309ae79a65e272f492ee149e59a04501/renderprojecthomepage.png
+https://github.com/VBE1994/ContactsProject2/blob/97f829e0309ae79a65e272f492ee149e59a04501/renderprojecthomepage.png
