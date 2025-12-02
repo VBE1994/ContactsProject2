@@ -6,6 +6,7 @@
 | :--- | :--- |
 | **Live Demo (Render)** | **https://contactsproject2.onrender.com** |
 | **GitHub Repository** | **https://github.com/VBE1994/ContactsProject2** |
+| **Video Demo** |  **https://video.laurea.fi/media/ContactsProject2/0_ilu2oz4q** |
 
 ---
 
