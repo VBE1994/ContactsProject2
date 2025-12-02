@@ -46,6 +46,20 @@ You can run the project locally using Node.js:
 
 
 
+## Screenshots
+
+### Homepage (Render deployment)
+![Homepage](screenshots/renderprojecthomepage.jpg)
+
+### Data.json view in VS Code
+![Data JSON](screenshots/datajsonvsc.jpg)
+
+### Testing the app in Incognito
+![Contacts App](screenshots/openincognito.jpg)
+
+
+
+
 Reflection 
 
 Working on this project was an excellent exercise in building a robust, full-stack application from scratch. The initial challenge involved ensuring the smooth flow of data between the asynchronous frontend's fetch() requests and the synchronous file-based backend. I learned the importance of clear separation of concerns between the Express API logic and the client-side rendering. During development, I successfully debugged a syntactical CSS issue, which reinforced my attention to detail. Deploying to Render provided practical experience in configuring a production-ready Node.js environment. A key future improvement for this project would be to migrate the file-based storage to a proper database (like PostgreSQL or SQLite) to ensure true scalability and reliability beyond a single-user environment.
